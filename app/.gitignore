@@ -1,0 +1,8 @@
+/build
+/__bus__.json
+/.DS_Store
+/mapping.txt
+/seeds.txt
+/unused.txt
+/release
+/debug
