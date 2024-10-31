@@ -19,5 +19,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TestBuildSrc2"
 include ':app'
