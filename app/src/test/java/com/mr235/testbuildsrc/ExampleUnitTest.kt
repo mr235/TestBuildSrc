@@ -1,4 +1,4 @@
-package com.mr235.testbuildsrc2
+package com.mr235.testbuildsrc
 
 import org.junit.Test
 
