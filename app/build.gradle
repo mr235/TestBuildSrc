@@ -1,7 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.mr235.test'
 }
+
+//apply plugin: 'com.mr235.test.TestPlugin'
 
 android {
     namespace 'com.mr235.testbuildsrc'
