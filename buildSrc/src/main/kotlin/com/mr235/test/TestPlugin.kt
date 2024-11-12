@@ -24,6 +24,49 @@ class TestPlugin : Plugin<Project> {
                     // 配置传递参数（如果需要）
                 }
                 variant.instrumentation.setAsmFramesComputationMode(FramesComputationMode.COMPUTE_FRAMES_FOR_INSTRUMENTED_CLASSES)
+                variant.instrumentation.excludes.add("**/BuildConfig")
+                variant.instrumentation.excludes.add("androidx/appcompat/widget/**")
+                variant.instrumentation.excludes.add("com/google/android/material/**")
+                variant.instrumentation.excludes.add("androidx/appcompat/view/**")
+                variant.instrumentation.excludes.add("kotlin/**")
+                variant.instrumentation.excludes.add("kotlinx/**")
+                variant.instrumentation.excludes.add("**/R$**")
+                variant.instrumentation.excludes.add("**/R")
+                variant.instrumentation.excludes.add("android/support/v4/**")
+                variant.instrumentation.excludes.add("androidx/activity/**")
+                variant.instrumentation.excludes.add("androidx/annotation/**")
+                variant.instrumentation.excludes.add("androidx/appcompat/**")
+                variant.instrumentation.excludes.add("androidx/arch/**")
+                variant.instrumentation.excludes.add("androidx/cardview/**")
+                variant.instrumentation.excludes.add("androidx/collection/**")
+                variant.instrumentation.excludes.add("androidx/concurrent/**")
+                variant.instrumentation.excludes.add("androidx/constraintlayout/**")
+                variant.instrumentation.excludes.add("androidx/coordinatorlayout/**")
+                variant.instrumentation.excludes.add("androidx/core/**")
+                variant.instrumentation.excludes.add("androidx/cursoradapter/**")
+                variant.instrumentation.excludes.add("androidx/customview/**")
+                variant.instrumentation.excludes.add("androidx/documentfile/**")
+                variant.instrumentation.excludes.add("androidx/drawerlayout/**")
+                variant.instrumentation.excludes.add("androidx/dynamicanimation/**")
+                variant.instrumentation.excludes.add("androidx/fragment/**")
+                variant.instrumentation.excludes.add("androidx/interpolator/**")
+                variant.instrumentation.excludes.add("androidx/lifecycle/**")
+                variant.instrumentation.excludes.add("androidx/loader/**")
+                variant.instrumentation.excludes.add("androidx/localbroadcastmanager/**")
+                variant.instrumentation.excludes.add("androidx/print/**")
+                variant.instrumentation.excludes.add("androidx/recyclerview/**")
+                variant.instrumentation.excludes.add("androidx/savedstate/**")
+                variant.instrumentation.excludes.add("androidx/tracing/**")
+                variant.instrumentation.excludes.add("androidx/transition/**")
+                variant.instrumentation.excludes.add("androidx/vectordrawable/**")
+                variant.instrumentation.excludes.add("androidx/versionedparcelable/**")
+                variant.instrumentation.excludes.add("androidx/viewpager/**")
+                variant.instrumentation.excludes.add("androidx/viewpager2/**")
+                variant.instrumentation.excludes.add("com/google/**")
+                variant.instrumentation.excludes.add("org/intellij/**")
+                variant.instrumentation.excludes.add("org/jetbrains/**")
+//                instrumentation. excludes. add("com`/`example`/`donotinstrument`/`**")
+//                instrumentation. excludes. add("**`/`*Test")
             }
         }
     }
@@ -36,13 +79,13 @@ class TestPlugin : Plugin<Project> {
             classContext: ClassContext,
             nextClassVisitor: ClassVisitor
         ): ClassVisitor {
+            println("==================== Plugin ====================isInstrumentable ${classContext.currentClassData.className}")
             return PageClassVisitor(nextClassVisitor)
         }
 
         override fun isInstrumentable(classData: ClassData): Boolean {
-            return classData.superClasses.contains("android.support.v7.app.AppCompatActivity")
-                    || classData.superClasses.contains("androidx.appcompat.app.AppCompatActivity")
-                    || classData.superClasses.contains("androidx.activity.ComponentActivity")
+//            println("==================== Plugin ====================isInstrumentable ${classData.className}")
+            return true
         }
     }
 }
