@@ -11,10 +11,10 @@ repositories {
 
 gradlePlugin {
     plugins {
-        register("TestPlugin") {
-            id = "com.mr235.test"
-            implementationClass = "com.mr235.test.TestPlugin"
-        }
+//        register("TestPlugin") {
+//            id = "com.mr235.test"
+//            implementationClass = "com.mr235.test.TestPlugin"
+//        }
     }
 }
 
@@ -30,5 +30,7 @@ dependencies {
     implementation("org.ow2.asm:asm-commons:9.6")
     implementation("org.ow2.asm:asm-util:9.7")
     implementation("org.ow2.asm:asm-tree:9.7")
+
+    implementation("com.google.code.gson:gson:2.10.1")
 
 }
