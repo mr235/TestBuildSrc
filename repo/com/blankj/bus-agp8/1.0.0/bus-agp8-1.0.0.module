@@ -1,0 +1,122 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.blankj",
+    "module": "bus-agp8",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "bus-agp8-1.0.0.jar",
+          "url": "bus-agp8-1.0.0.jar",
+          "size": 35602,
+          "sha512": "f6a7466f37733857c33a6e28642e8d9476bc5bdc1b2608050e1a474afb246dc5a704ae9ba11b8893c6fcb243f1771ad30b75af182759a77f8939d0da3474d4c4",
+          "sha256": "34a1cd0cf66b6bd8828e636ff51c210d41882c6b99f5e121ec4554595e3c7b17",
+          "sha1": "1e3fa5778560c17bd0de322f86dacd162b76de7a",
+          "md5": "e7e8c4f323df6ba510a8007d196f0453"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.4.2"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle-api",
+          "version": {
+            "requires": "7.4.2"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.13.0"
+          }
+        },
+        {
+          "group": "commons-codec",
+          "module": "commons-codec",
+          "version": {
+            "requires": "1.15"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.6"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-util",
+          "version": {
+            "requires": "9.7"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-tree",
+          "version": {
+            "requires": "9.7"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.10.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "bus-agp8-1.0.0.jar",
+          "url": "bus-agp8-1.0.0.jar",
+          "size": 35602,
+          "sha512": "f6a7466f37733857c33a6e28642e8d9476bc5bdc1b2608050e1a474afb246dc5a704ae9ba11b8893c6fcb243f1771ad30b75af182759a77f8939d0da3474d4c4",
+          "sha256": "34a1cd0cf66b6bd8828e636ff51c210d41882c6b99f5e121ec4554595e3c7b17",
+          "sha1": "1e3fa5778560c17bd0de322f86dacd162b76de7a",
+          "md5": "e7e8c4f323df6ba510a8007d196f0453"
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,11 @@
+
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 //    id 'com.mr235.test'
-    id 'com.blankj_custom.bus'
+//    id 'com.blankj_custom.bus'
+    id 'com.blankj.bus-agp8'
 }
 
 //apply plugin: 'com.mr235.test.TestPlugin'
