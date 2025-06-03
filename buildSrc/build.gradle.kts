@@ -1,7 +1,7 @@
 
 plugins {
     `kotlin-dsl`
-    kotlin("jvm") version "1.8.10"
+    kotlin("jvm") version "2.1.21"
 }
 
 repositories {
@@ -21,8 +21,8 @@ gradlePlugin {
 dependencies {
     implementation(gradleApi())
 
-    implementation("com.android.tools.build:gradle:8.1.0")
-    implementation("com.android.tools.build:gradle-api:8.1.0")
+    implementation("com.android.tools.build:gradle:8.10.1")
+    implementation("com.android.tools.build:gradle-api:8.10.1")
 
     implementation("commons-io:commons-io:2.13.0")
     implementation("commons-codec:commons-codec:1.15")
