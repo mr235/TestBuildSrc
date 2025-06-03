@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 include ':app'
 include ':bus-gradle-plugin'
+include ':bus-gradle-plugin-to-gradle-plugin-portal'

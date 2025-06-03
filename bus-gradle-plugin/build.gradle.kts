@@ -38,8 +38,8 @@ tasks.withType<PublishToMavenRepository>().configureEach {
 dependencies {
     implementation(gradleApi())
 
-    implementation("com.android.tools.build:gradle:7.4.2")
-    implementation("com.android.tools.build:gradle-api:7.4.2")
+    implementation("com.android.tools.build:gradle:8.1.0")
+    implementation("com.android.tools.build:gradle-api:8.1.0")
 
     implementation("commons-io:commons-io:2.13.0")
     implementation("commons-codec:commons-codec:1.15")
